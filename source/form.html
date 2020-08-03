@@ -60,18 +60,24 @@
           <form class="selection__form" action="#" method="POST">
             <div class="selection__first">
               <fieldset class="selection__outline">
-                <label class="selection__item">
-                  <span>Имя:*</span>
-                  <input class="selection__input" type="text" placeholder="Барсик" required>
-                </label>
-                <label class="selection__item">
-                  <span>Вес (кг):*</span>
-                  <input class="selection__input" type="number" placeholder="7" required>
-                </label>
-                <label class="selection__item selection__item--last">
-                  <span>Возраст (лет):*</span>
-                  <input class="selection__input" type="number" placeholder="7" required>
-                </label>
+                <div class="selection__item">
+                  <label class="selection__item--comment">Имя:*</label>
+                  <div class="selection__input--wrapper">
+                    <input class="selection__input" type="text" placeholder="Барсик" required>
+                  </div>
+                </div>
+                <div class="selection__item">
+                  <label class="selection__item--comment">Вес (кг):*</label>
+                  <div class="selection__input--wrapper">
+                    <input class="selection__input" type="number" placeholder="7" required>
+                  </div>
+                </div>
+                <div class="selection__item selection__item--last">
+                  <label class="selection__item--comment">Возраст (лет):*</label>
+                  <div class="selection__input--wrapper">
+                    <input class="selection__input" type="number" placeholder="7" required>
+                  </div>
+                </div>
               </fieldset>
 
               <fieldset class="selection__outline selection__outline--radio">
