@@ -94,28 +94,28 @@
               <div class="selection__about-owner">
                 <h2 class="selection__title">Контактные данные<br> (владельца кота)</h2>
                 <div class="selection__flex">
-                  <label class="selection__item selection__item--comment">
-                    <span>e-mail:*</span>
+                  <div class="selection__item">
+                    <label class="selection__item--comment" for="mail">e-mail:*</label>
                     <div class="selection__input--wrapper">
-                      <input class="selection__input" type="email" placeholder="kuklachev@gmail.com" required>
+                      <input class="selection__input" type="email" placeholder="kuklachev@gmail.com" id="mail" required>
                       <svg class="selection__icon" viewBox="0 0 17 13" width="18" height="20" id="icon-mail">
                         <path
                           d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z">
                         </path>
                       </svg>
                     </div>
-                  </label>
-                  <label class="selection__item selection__item--comment">
-                    <span>телефон:*</span>
+                  </div>
+                  <div class="selection__item">
+                    <label class="selection__item--comment" for="phone">телефон:*</label>
                     <div class="selection__input--wrapper">
-                      <input class="selection__input" type="tel" placeholder="8 (960) 900-60-90" required>
+                      <input class="selection__input" type="tel" placeholder="8 (960) 900-60-90" id="phone" required>
                       <svg class="selection__icon" viewBox="0 0 20 20" width="20" height="20" id="icon-phone">
                         <path
                           d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zm-9.8 10v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8h3.9v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9v13.9c-.1 1.7 1.2 3.1 2.9 3.1h4.6c.3.1.6-.2.6-.5z">
                         </path>
                       </svg>
                     </div>
-                  </label>
+                  </div>
                 </div>
               </div>
               <div class="selection__coment">
@@ -184,7 +184,7 @@
       <div class="page-footer__wrapper">
         <a href="index.html">
           <img class="page-footer__logo" src="img/logo-footer.svg" width="135" height="24"
-            alt="Логотип компании «Кэт Энерджи»" class="page-footer__logo">
+            alt="Логотип компании «Кэт Энерджи»">
         </a>
         <ul class="page-footer__social">
           <li class="page-footer__item">

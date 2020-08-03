@@ -2157,14 +2157,6 @@ main {
           justify-content: space-between;
   margin-bottom: 14px;
   cursor: pointer; }
-  .selection__item span {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    margin-right: 15px;
-    font-size: 16px;
-    line-height: 18px;
-    color: #444444;
-    text-transform: uppercase; }
 
 .selection__item--radio {
   position: relative;
@@ -2240,6 +2232,16 @@ main {
     border: 1px solid #bababa; }
   .selection__item--checkbox:active {
     opacity: 0.3; }
+
+.selection__item--comment,
+.selection__item span {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase; }
 
 .selection__outline p input[name=program]:checked + .selection__item::before {
   display: block; }
@@ -2364,6 +2366,10 @@ main {
     .selection__item span {
       font-size: 20px;
       line-height: 20px; }
+  .selection__item--comment,
+  .selection__item span {
+    font-size: 20px;
+    line-height: 20px; }
   .selection__input::-webkit-input-placeholder {
     font-size: 20px;
     line-height: 20px; }
