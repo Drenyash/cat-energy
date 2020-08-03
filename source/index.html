@@ -52,13 +52,14 @@
           <p class="page-main__description">Занялся собой? Займись котом!</p>
           <picture>
             <source media="(min-width: 1300px)"
-              srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp x2">
+              srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
             <img class="page-main__image" width="280" height="270" src="img/section-header/index-can-mobile.png"
               srcset="img/section-header/index-can-mobile@2x.png 2x" alt="Пример товара Кэт Энерджи">
           </picture>
           <a class="page-main__link btn" href="form.html">Подобрать программу</a>
         </div>
       </div>
+    </div>
   </header>
 
   <main class="page-main">
@@ -170,23 +171,25 @@
               <p class="example__spend">Затраты на питание: <span class="example_price">15 000 руб.</span></p>
             </div>
           </div>
-          <ul class="example__slider slider">
-            <li class="slider__item slider__before">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/2-layers.png">
-                <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="До"
-                  class="slider__image slider--before">
-              </picture>
-            </li>
-            <li class="slider__item slider__after slider--none">
-              <img src="" alt="После" class="slider__image">
-            </li>
+          <div class="example__slider slider">
+            <ul class="slider__inner">
+              <li class="slider__item slider__before">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/2-layers.png">
+                  <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="До"
+                    class="slider__image slider--before">
+                </picture>
+              </li>
+              <li class="slider__item slider__after slider--none">
+
+              </li>
+            </ul>
             <div class="slider__menu">
               <button class="slider__button" type="button">Было</button>
               <div class="example__progress-bar progress-bar"><span class="progress-bar__item"></span></div>
               <button class="slider__button" type="button">Стало</button>
             </div>
-          </ul>
+          </div>
         </div>
       </div>
       <div class="example__inner"></div>
@@ -221,7 +224,7 @@
       <div class="page-footer__wrapper">
         <a href="index.html">
           <img class="page-footer__logo" src="img/logo-footer.svg" width="135" height="24"
-            alt="Логотип компании «Кэт Энерджи»" class="page-footer__logo">
+            alt="Логотип компании «Кэт Энерджи»">
         </a>
         <ul class="page-footer__social">
           <li class="page-footer__item">

@@ -13,9 +13,10 @@
   padding-top: 13px;
   padding-bottom: 17px;
   border-bottom: 1px solid #cdcdcd;
-  &:first-child {
+}
+
+.additional__item:first-child {
   border-top: 1px solid #cdcdcd;
-  }
 }
 
 .additional__title {
@@ -28,18 +29,18 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: #111;
-  background-color: #fff;
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 14px;
-    left: 0;
-    width: 100vw;
-    height: 3px;
-    z-index: -1;
-    background-color: #68b738;
+  color: #111111;
+  background-color: #ffffff;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 14px;
+      left: 0;
+      width: 100vw;
+      height: 3px;
+      z-index: -1;
+      background-color: #68b738;
   }
 }
 
@@ -181,7 +182,6 @@
   .additional__title {
     padding-left: 20px;
     margin-left: -20px;
-    
   }
   .additional__inner {
     display: flex;

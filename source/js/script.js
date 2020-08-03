@@ -22,4 +22,3 @@ burger.addEventListener('click', function () {
     burger.classList.add('burger--close');
   }
 })
-

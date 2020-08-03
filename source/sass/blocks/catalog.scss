@@ -11,7 +11,7 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111;
+  color: #111111;
 }
 
 .catalog__item {
@@ -21,7 +21,7 @@
 
 .catalog__table {
   font-family: "Arial", sans-serif;
-  width: 100%; 
+  width: 100%;
   margin-bottom: 20px;
   border-collapse: collapse;
 }
@@ -39,6 +39,8 @@
 
 .catalog__footer {
   text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
 }
 
 .catalog__head {
@@ -98,15 +100,10 @@
   content: "";
   position: absolute;
   left: 14px;
-  top: 0px;
+  top: 0;
   width: 2px;
   height: 30px;
   background-color: #d3d3d3;
-}
-
-.catalog__footer {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ededed;
 }
 
 @media (max-width: 767px) {
@@ -193,7 +190,6 @@
     padding-right: 0;
     text-align: center;
   }
-  
   .catalog__wrapper {
     width: 100%;
   }
