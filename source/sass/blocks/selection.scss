@@ -1,0 +1,447 @@
+.selection__form {
+  padding-bottom: 31px;
+}
+
+.selection__outline {
+  border: none;
+  margin: 0;
+  padding: 0;
+  p {
+    margin: 0;
+    display: flex;
+  }
+}
+
+.selection__outline--radio {
+  margin-top: 9px;
+  padding-top: 26px;
+  padding-bottom: 4px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  p {
+    margin: 0;
+  }
+}
+
+.selection__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  cursor: pointer;
+  span {
+    flex-shrink: 0;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+
+    text-transform: uppercase;
+  }
+}
+.selection__item--radio {
+  position: relative;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+  padding-left: 46px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ededed;
+    cursor: pointer;
+  }
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 9px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: #68b738;
+    cursor: pointer;
+  }
+  &:hover {
+    &::after {
+      border: 1px solid #bababa;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.selection__item--checkbox {
+  position: relative;
+  flex-shrink: 0;
+  padding-left: 46px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ededed;
+    cursor: pointer;
+  }
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/tick.svg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    cursor: pointer;
+  }
+  &:hover {
+    &::after {
+      border: 1px solid #bababa;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.selection__outline p input[name=program]:checked+.selection__item::before {
+  display: block;
+}
+
+.selection__outline p input[type=checkbox]:checked+.selection__item::before {
+  display: block;
+}
+
+.selection__radio {
+  display: none;
+}
+
+.selection__input {
+  width: 100%;
+  padding: 9px 40px 10px 15px;
+  border: 1px solid #e6e6e6;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  &::placeholder {
+    color: #444444;
+  }
+  &:hover {
+    border-color: #cdcdcd;
+  }
+  &:focus {
+    border-color: 444444;
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
+  }
+}
+
+.selection__input:focus:invalid ~ .selection__icon {
+  fill: #ff8282;
+}
+
+.selection__input:active ~ .selection__icon, .selection__input:focus ~ .selection__icon {
+  fill: #68b738;
+}
+
+.selection__input--wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.selection__input--wrapper svg {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  cursor: auto;
+  transform: translateY(-50%);
+}
+
+.selection__title {
+  display: inline-block;
+  position: relative;
+  margin-top: 28px;
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #fff;
+  padding-right: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    width: 100vw;
+    height: 3px;
+    z-index: -1;
+    background-color: #68b738;
+  }
+}
+
+.selection__title--add {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.selection__area {
+  width: 100%;
+  padding: 13px 13px 10px 14px;
+  border: 1px solid #ededed;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  resize: none;
+  &:hover {
+    border: 1px solid #bababa;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.selection__checkbox {
+  display: none;
+}
+
+.selection__required {
+  font-family: "Arial", sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.selection__btn {
+  font: inherit;
+  padding: 10px 20px;
+  margin-top: 14px;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .selection__form {
+    padding-bottom: 56px;
+  }
+  .selection__wrapper {
+    padding-left: 41px;
+    padding-right: 37px;
+  }
+  .selection__item {
+    font-size: 20px;
+    line-height: 20px;
+    span {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .selection__input::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .selection__outline--radio {
+    margin-top: 52px;
+    padding-top: 29px;
+    padding-left: 27px;
+    padding-bottom: 12px;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+  }
+  .selection__item {
+    margin-bottom: 20px;
+  }
+  .selection__item--radio {
+    margin-bottom: 25px;
+    padding-top: 6px;
+    padding-left: 59px;
+    font-size: 20px;
+    line-height: 20px;
+    &::before {
+      left: 11px;
+      top: 9px;
+      width: 18px;
+      height: 18px;
+    }
+    &::after {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .selection__input {
+    padding: 14px 45px 12px 19px;
+  }
+  .selection__title {
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+    padding-right: 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display: block;
+      width: 100vw;
+      height: 3px;
+      z-index: -1;
+      background-color: #68b738;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      display: block;
+      width: 100vw;
+      height: 3px;
+      z-index: -1;
+      background-color: #68b738;
+    }
+    br {
+      display: none;
+    }
+  }
+  .selection__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .selection__item--checkbox {
+    min-width: 287px;
+  }
+  .selection__send {
+    display: flex;
+    align-items: center;
+  } 
+  .selection__btn {
+    margin-right: 60px;
+    max-width: 284px;
+  }
+  .selection__title {
+    margin-top: 75px;
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .selection__coment .selection__title {
+    margin-top: 65px;
+  }
+  .selection__area {
+    padding: 14px 13px 18px 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .selection__title--add {
+    margin-top: 61px;
+    margin-bottom: 59px;
+  }
+  .selection__item--checkbox {
+    margin-bottom: 46px;
+    padding-top: 6px;
+    padding-left: 57px;
+    font-size: 20px;
+    line-height: 20px;
+    &::after {
+      width: 40px;
+      height: 40px;
+    }
+    &::before {
+      background-position: 9px 10px;
+    }
+  }
+  .selection__btn {
+    padding: 15px 20px 17px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .selection__required {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .selection__form {
+    padding-bottom: 62px;
+  }
+  .selection__wrapper {
+    padding: 0;
+  }
+  .selection__first {
+    display: flex;
+    justify-content: space-between;
+  }
+  .selection__outline--radio {
+    margin-left: 80px;
+  }
+  .selection__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .selection__item {
+    min-width: 570px;
+  }
+  .selection__item--last {
+    margin: 0;
+  }
+  .selection__item--checkbox {
+    min-width: 245px;
+  }
+  .selection__outline {
+    margin-top: 0;
+    min-width: 570px;
+  }
+  .selection__btn {
+    margin-top: 26px;
+    margin-right: 80px;
+    min-width: 570px;
+  }
+  .selection__title {
+    margin-top: 69px;
+  }
+  .selection__coment .selection__title {
+    margin-top: 47px;
+  }
+  .selection__title--add {
+    margin-top: 64px;
+  }
+}

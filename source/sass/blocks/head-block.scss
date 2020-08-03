@@ -1,0 +1,40 @@
+.head-block__title {
+  margin-top: 14px;
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.head-block__description {
+  margin-bottom: 39px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .head-block__title {
+    margin-top: 54px;
+    margin-bottom: 55px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .head-block__description {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .head-block__title {
+    margin-top: 72px;
+  }
+  .head-block__description {
+    padding-left: 0;
+  }
+}

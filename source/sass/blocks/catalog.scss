@@ -1,0 +1,239 @@
+.catalog__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__title {
+  padding-right: 50px;
+  margin-top: 21px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.catalog__item {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__table {
+  font-family: "Arial", sans-serif;
+  width: 100%; 
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.catalog__description {
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog__description--price {
+  text-align: right;
+}
+
+.catalog__footer {
+  text-align: center;
+}
+
+.catalog__head {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.catalog__text {
+  font-family: "Arial", sans-serif;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog__btn {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  letter-spacing: 1px;
+}
+
+.catalog__btn--more {
+  background-color: #f2f2f2;
+  color: #444444;
+  &:hover {
+    background-color: #ebebeb;
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.illustration__add {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 26px;
+  margin-bottom: 23px;
+  width: 30px;
+  height: 30px;
+}
+
+.illustration__add-item {
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+}
+
+.illustration__add-item::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0px;
+  width: 2px;
+  height: 30px;
+  background-color: #d3d3d3;
+}
+
+.catalog__footer {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+}
+
+@media (max-width: 767px) {
+  .catalog__title,
+  .catalog__head,
+  .catalog__text {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    margin-bottom: 67px;
+  }
+  .catalog__item,
+  .catalog__footer {
+    width: 324px;
+    border: none;
+  }
+  .catalog__item,
+  .catalog__footer {
+    padding-bottom: 0;
+    margin-top: 140px;
+    background-color: #f2f2f2;
+    .container {
+      padding: 0 37px;
+      padding-bottom: 40px;
+    }
+  }
+  .catalog__item {
+    display: flex;
+    align-items: flex-end;
+  }
+  .catalog__body img {
+    margin-top: -82px;
+    margin-bottom: 23px;
+  }
+  .catalog__footer {
+    align-items: center;
+    border: 1px solid #cdcdcd;
+    background-color: transparent;
+    .container {
+      height: 100%;
+      padding-top: 28px;
+      padding-bottom: 38px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  .catalog__wrapper--footer {
+    margin-bottom: 53px;
+  }
+  .catalog__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .catalog__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .catalog__line {
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .catalog__description {
+    padding-top: 8px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .catalog__title {
+    margin-top: 10px;
+    margin-bottom: 19px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .catalog__wrapper {
+    width: 100%;
+  }
+  .catalog__table {
+    margin-bottom: 33px;
+  }
+  .illustration__add {
+    width: 60px;
+    height: 60px;
+  }
+  .illustration__add-item {
+    width: 60px;
+    &::before {
+      height: 60px;
+      left: 30px;
+    }
+  }
+  .catalog__head {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .catalog__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .catalog__item .catalog__image {
+    margin-top: -48px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .catalog {
+    margin-bottom: 51px;
+  }
+  .catalog__inner {
+    max-width: 1300px;
+    padding: 0 40px;
+  }
+  .catalog__item,
+  .catalog__footer {
+    width: 245px;
+  }
+}
