@@ -6,6 +6,10 @@
   background-color: #f2f2f2;
 }
 
+.map iframe {
+  border: none;
+}
+
 @media (max-width: 767px) {
   .map {
     .container--full {

@@ -372,11 +372,25 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  font-weight: 400;
+  font-family: "Oswald";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff"); }
+
+@font-face {
+  font-weight: 500;
+  font-family: "Oswald";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff"); }
+
 body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", arial, sans-serif;
   font-weight: 400;
   font-size: 14px; }
 
@@ -644,7 +658,7 @@ main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 480px; }
+    max-width: 500px; }
   .menu-list__item {
     border: none; }
   .menu-list__link {
@@ -694,9 +708,12 @@ main {
     width: 202px;
     height: 59px; }
   .main-menu {
-    min-width: 480px; }
+    max-width: 640px; }
+  .menu-list {
+    max-width: none; }
   .menu-list__link {
     padding-top: 14px;
+    margin-left: 25px;
     font-size: 20px;
     line-height: 24px;
     color: #ffffff; }
@@ -2084,6 +2101,9 @@ main {
 
 .map--darkness {
   background-color: #f2f2f2; }
+
+.map iframe {
+  border: none; }
 
 @media (max-width: 767px) {
   .map .container--full div {

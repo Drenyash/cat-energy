@@ -192,7 +192,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 480px;
+    max-width: 500px;
   }
   .menu-list__item {
     border: none;
@@ -254,10 +254,14 @@
     height: 59px;
   }
   .main-menu {
-    min-width: 480px;
+    max-width: 640px;
+  }
+  .menu-list {
+    max-width: none;
   }
   .menu-list__link {
     padding-top: 14px;
+    margin-left: 25px;
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;

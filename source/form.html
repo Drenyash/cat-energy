@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт Энерджи - Программа</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="fonts">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="fonts">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -61,21 +62,21 @@
             <div class="selection__first">
               <fieldset class="selection__outline">
                 <div class="selection__item">
-                  <label class="selection__item--comment">Имя:*</label>
+                  <label class="selection__item--comment" for="name">Имя:*</label>
                   <div class="selection__input--wrapper">
-                    <input class="selection__input" type="text" placeholder="Барсик" required>
+                    <input class="selection__input" type="text" id="name" placeholder="Барсик" required>
                   </div>
                 </div>
                 <div class="selection__item">
-                  <label class="selection__item--comment">Вес (кг):*</label>
+                  <label class="selection__item--comment" for="weight">Вес (кг):*</label>
                   <div class="selection__input--wrapper">
-                    <input class="selection__input" type="number" placeholder="7" required>
+                    <input class="selection__input" type="number" id="weight" placeholder="7" required>
                   </div>
                 </div>
                 <div class="selection__item selection__item--last">
-                  <label class="selection__item--comment">Возраст (лет):*</label>
+                  <label class="selection__item--comment" for="yold">Возраст (лет):*</label>
                   <div class="selection__input--wrapper">
-                    <input class="selection__input" type="number" placeholder="7" required>
+                    <input class="selection__input" type="number" id="yold" placeholder="7" required>
                   </div>
                 </div>
               </fieldset>
